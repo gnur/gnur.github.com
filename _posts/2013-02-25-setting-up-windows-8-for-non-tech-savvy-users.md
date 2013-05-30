@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Setting up windows 8 for non tech savvy users"
-description: "A short guide on setting up Windows 8 for the non-tech-savvy users"
+title: "setting up windows 8 for non tech savvy users"
+description: "a short guide on setting up Windows 8 for the non-tech-savvy users"
 category:
 tags: ["windows 8", "how-to"]
 ---
@@ -23,7 +23,7 @@ There are some downsides however.
 
 
 # Installing software
-I would advise using [http://www.ninite.com](ninite) to install the basic things like browser plug-ins, zipping tools, browsers, antivirus & office. My personal recommendation is to select the following: Chrome, Avira, 7-Zip, Java, Air, Shockwave, LibreOffice, Foxit Reader & TeamViewer (More on that later). The upside of using ninite is that you can save the installer and run it later to update all the packages (if you run it often, you won't even get those annoying pop-ups with updates available).
+I would advise using [ninite](http://www.ninite.com) to install the basic things like browser plug-ins, zipping tools, browsers, antivirus & office. My personal recommendation is to select the following: Chrome, Avira, 7-Zip, Java, Air, Shockwave, LibreOffice, Foxit Reader & TeamViewer (More on that later). The upside of using ninite is that you can save the installer and run it later to update all the packages (if you run it often, you won't even get those annoying pop-ups with updates available).
 I believe that maybe 90% of the users won't need more software then these packages.
 
 # Managing the start menu
