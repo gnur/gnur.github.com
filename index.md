@@ -1,7 +1,7 @@
 ---
 layout: page
 title: blog.erwin.io
-tagline: Writing about the world
+tagline: Writing about my personal interests
 ---
 {% include JB/setup %}
 
