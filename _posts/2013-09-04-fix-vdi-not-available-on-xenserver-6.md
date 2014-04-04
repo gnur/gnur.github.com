@@ -10,6 +10,7 @@ tags: ["xen", "xenserver", "xencenter", "virtualization", "fix"]
 
 # A short how to to fix the annoying 'vdi not available error'
 Sometimes when a VM doesn't get shut down cleanly it can generate a VDI not available error when you try to boot it. The Citrix Knowledge Center has a fix listed as [CTX138234](http://support.citrix.com/article/CTX138234). Unfortunately the last time I encountered this issue the official fix didn't work. I was able to fix the issue by moving the system disk to a different Storage Repository. This is how I did it:  
+
 - Open up Xencenter and open the VM that gives the error
 - Go to the storage tab and select the disk that gives the error (If you have only 1 disk, that's easy. If you have multiple disks, start with the smallest)
 - Note the Storage Repository, it's listed in the SR column
