@@ -9,13 +9,13 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : blog.erwin.io
-tagline: writing about the world
-author :
+title : It's all about technology
+owner :
   name : Erwin de Keijzer
   email : jekyll@erwin.io
+  avatar: erwin.jpg
   github : gnur
-  googleplus: 110275038816863882174
+  googleplus: "http://plus.google.com/110275038816863882174"
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -125,3 +125,9 @@ JB :
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
   
+links:
+  - title: Articles
+    url: /articles
+  - title: Github
+    url: https://github.com/gnur/
+    external: true

@@ -5,10 +5,6 @@ tagline: Writing about my personal interests
 ---
 {% include JB/setup %}
 
-## What does it mean to write about the world?
-
-I don't know, but it happens here.
-
 ## All Posts
 
 <ul class="posts">
