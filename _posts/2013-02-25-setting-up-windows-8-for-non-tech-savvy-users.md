@@ -30,12 +30,14 @@ I believe that maybe 90% of the users won't need more software then these packag
 The start screen should probably be kept as clean as possible, you probably don't need shortcuts to the (metro-styled) calendar & mail app.
 The quick way to remove all the unnecessary apps is to right click them all and then select the __Unpin from Start__ option in the bottom of the screen. You should probably leave the Desktop shortcut on the start screen, I would even suggest leaving that one as the only option. That way, the user that logs in will only have the desktop option when logging in and will then be presented with the desktop environment.
 If you accidentally remove the desktop shortcut, you can add it again by
+
 - going to the start screen
 - search for desktop (just type it, this will start the search through your apps)
 - right click the small desktop tile and select __Pin to start__ in the bottom of the screen
 
 ## Fix file associations (to prevent metro apps from popping up)
 By default, Windows 8 tries to open nearly all media files with a metro application. This is quite annoying, but luckily also quite easy to fix.
+
 - open the start screen
 - type default and press enter (it should open default programs)
 - choose the top option (Set your default programs)
@@ -45,12 +47,14 @@ By default, Windows 8 tries to open nearly all media files with a metro applicat
 
 
 Unfortunately my PDF-viewer of choice (Foxit Reader) doesn't add itself to the list of programs, so we'll have to set up that association manually.
+
 - search for a pdf-file
 - right click it and choose __Open with__ and __Choose default program...__
 - click Foxit reader in the list that now pops up
 
 ## Change display language of Windows 8
 One of the greatest new features is the ease with which you can change the display language. Now I can install and setup a pc using English (my preferred language when installing) and change the language to Dutch with a few steps.
+
 - search for language in the start screen and click __Settings__ in the top right
 - click the language tile
 - choose the __Add a language__ button and pick the language you'd like to add
