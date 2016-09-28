@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/night.css">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                    <h2>DCOS</h2>
+                    <section></section>
+                    <section>
+                        <h2>notendop</h2>
+                        <ul>
+                            <li>centos / rhel</li>
+                            <li>veel componenten</li>
+                            <li>bootstrap vanuit DCOS</li>
+                            <li>werkt met VAMP</li>
+                            <li>volwassen (?)</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>pluspunten</h2>
+                        <ul>
+                            <li>goede webinterface</li>
+                            <li>goede logging opties</li>
+                            <li>gebruikt healthchecks voor een rolling release</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>minpunten</h2>
+                        <ul>
+                            <li>distributed state
+                                <ul>
+                                    <li>mesos-leader in-memory</li>
+                                    <li>zookeeper</li>
+                                    <li>docker daemon</li>
+                                </ul>
+                            </li>
+                            <li>veel componenten (zookeper, mesos, marathon, dns)</li>
+                            <li>geen drain-mode om nodes weg te halen</li>
+                            <li>recovery is complex
+                                <ul>
+                                    <li>via andere wegen dan je dagelijks gebruikt</li>
+                                    <li>web ui biedt geen soelaas</li>
+                                    <li>zookeeper state purgen (hoezo zitten we ineens aan zookeeper?)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <h2>nomad</h2>
+                    <section></section>
+                    <section>
+                        <h2>notendop</h2>
+                        <ul>
+                            <li>os onafhankelijk (bsd, windows, linux)</li>
+                            <li>single binary</li>
+                            <li>hashicorp</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>pluspunten</h2>
+                        <ul>
+                            <li>geen cognitive overload (1 binary)</li>
+                            <li>node drainage is mogelijk (voor onderhoud of clean shutdown)</li>
+                            <li>kan op debian draaien (meer interne kennis)</li>
+                            <li>minder overhead (nomad servers/masters kunnen waarschijnlijk op micro of small draaien)</li>
+                            <li>consul integratie</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>minpunten</h2>
+                        <ul>
+                            <li>relatief jong</li>
+                            <li>rolling releases zijn (nog) niet op basis van consul healthchcecks</li>
+                            <li>geen standaard web ui (en de beschikbare UI is read-only)</li>
+                        </ul>
+                    </section>
+                </section>
+            </div>
+        </div>
+        <script src="js/reveal.js"></script>
+        <script>
+            Reveal.initialize({
+                history: true
+            });
+        </script>
+    </body>
+</html>
