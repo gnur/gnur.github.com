@@ -25,27 +25,20 @@
                             <li>goede webinterface</li>
                             <li>goede logging opties</li>
                             <li>gebruikt healthchecks voor een rolling release</li>
+                            <li>vamp ondersteuning</li>
                         </ul>
                     </section>
                     <section>
-                        <h2>minpunten</h2>
+                        <h3>minpunten</h3>
                         <ul>
-                            <li>distributed state
-                                <ul>
-                                    <li>mesos-leader in-memory</li>
-                                    <li>zookeeper</li>
-                                    <li>docker daemon</li>
-                                </ul>
-                            </li>
+                            <li>complex</li>
+                            <li>distributed state</li>
                             <li>veel componenten (zookeper, mesos, marathon, dns)</li>
                             <li>geen drain-mode om nodes weg te halen</li>
-                            <li>recovery is complex
-                                <ul>
-                                    <li>via andere wegen dan je dagelijks gebruikt</li>
-                                    <li>web ui biedt geen soelaas</li>
-                                    <li>zookeeper state purgen (hoezo zitten we ineens aan zookeeper?)</li>
-                                </ul>
-                            </li>
+                            <li>geen "system" jobs (tasks die op elke node moeten draaien)</li>
+                            <li>consul integratie is meh</li>
+                            <li>door enorme overhead is het niet wenselijk om meerder clusters te draaien, waardoor consul ook unified moet worden</li>
+                            <li>recovery is complex (niet via web ui, state uit zookeeper halen)</li>
                         </ul>
                     </section>
                 </section>
@@ -63,19 +56,50 @@
                     <section>
                         <h2>pluspunten</h2>
                         <ul>
-                            <li>geen cognitive overload (1 binary)</li>
-                            <li>node drainage is mogelijk (voor onderhoud of clean shutdown)</li>
+                            <li>simpel</li>
+                            <li>consul integratie</li>
                             <li>kan op debian draaien (meer interne kennis)</li>
                             <li>minder overhead (nomad servers/masters kunnen waarschijnlijk op micro of small draaien)</li>
-                            <li>consul integratie</li>
+                            <li>meerdere workloads mogelijk (binaries, jar, docker, rocket)</li>
+                            <li>system jobs (jobs die op elke node moeten draaien)</li>
+                            <li>node drainage is mogelijk (voor onderhoud of clean shutdown)</li>
                         </ul>
                     </section>
                     <section>
                         <h2>minpunten</h2>
                         <ul>
                             <li>relatief jong</li>
+                            <li>unknown unknowns</li>
+                            <li>werkt niet met vamp</li>
                             <li>rolling releases zijn (nog) niet op basis van consul healthchcecks</li>
                             <li>geen standaard web ui (en de beschikbare UI is read-only)</li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <h2>kubernetes</h2>
+                    <section></section>
+                    <section>
+                        <h2>notendop</h2>
+                        <ul>
+                            <li>werkt op ubuntu</li>
+                            <li>google</li>
+                            <li>planet scale</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>pluspunten</h2>
+                        <ul>
+                            <li>google (15 jaar productie ervaring met containers)</li>
+                            <li>werkt met vamp</li>
+                            <li>waarschijnlijk heel goed</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>minpunten</h2>
+                        <ul>
+                            <li>niemand heeft er ervaring mee</li>
+                            <li>extreem veel uitzoekwerk</li>
                         </ul>
                     </section>
                 </section>
