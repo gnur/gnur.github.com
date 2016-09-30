@@ -31,16 +31,28 @@
                         </ul>
                     </section>
                     <section>
+                        <img src="/lib/img/dcos-services.png">
+                    </section>
+                    <section>
                         <h3>minpunten</h3>
                         <ul>
                             <li>complex</li>
                             <li>distributed state</li>
+                            <li>we gebruiken DCOS niet zoals het bedoelt is (public / private slaves)</li>
                             <li>veel componenten (zookeper, mesos, marathon, dns)</li>
                             <li>geen drain-mode om nodes weg te halen</li>
                             <li>geen "system" jobs (tasks die op elke node moeten draaien)</li>
                             <li>consul integratie is meh</li>
                             <li>door enorme overhead is het niet wenselijk om meerder clusters te draaien, waardoor consul ook unified moet worden</li>
-                            <li>recovery is complex (niet via web ui, state uit zookeeper halen)</li>
+                            <li>(disaster) recovery is complex</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>compromis</h3>
+                        <ul>
+                            <li>mesos-consul is niet realtime &amp; schoont niet alles goed op</li>
+                            <li>aangezien de mesos-masters minstens 3 * m4.xlarge (moeten) zijn is het onwenselijk om aparte acc & prod dcos clusters te maken</li>
+                            <li>door mesos-consul & clusterwide DNS settings moet consul geunificeerd worden</li>
                         </ul>
                     </section>
                 </section>
@@ -102,6 +114,33 @@
                         <ul>
                             <li>niemand heeft er ervaring mee</li>
                             <li>extreem veel uitzoekwerk</li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>voordelen DCOS over nomad</h2>
+                        <ul>
+                            <li>minder unknowns</li>
+                            <li>werkt met VAMP</li>
+                            <li>volwassener</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>voordelen nomad over DCOS</h2>
+                        <ul>
+                            <li>simpeler (alle componenten zijn bekend)</li>
+                            <li>lichter</li>
+                            <li>consul integratie</li>
+                            <li>minder overhead waardoor losse accept en prod nog steeds mogelijk is</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>wat sowieso geregeld moet worden</h2>
+                        <ul>
+                            <li>manier om bij cluster failure toch up and running te komen</li>
+                            <li>documenteren van fixes en workarounds</li>
+                            <li>monitoring (alerts als happy flow niet werkt, als containers flapping zijn etc.)</li>
                         </ul>
                     </section>
                 </section>
